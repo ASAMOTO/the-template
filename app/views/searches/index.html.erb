@@ -1,0 +1,28 @@
+<body class="search_page">
+    <header>
+        <h2><%= image_tag 'title.png' %></h2>
+    </header>
+    <div id="container">
+        <h1>テンプレート検索</h1>
+        <p>
+        ついつい見た目で選んでしまい、結果的に成果が出ない…ということを体験したことはないでしょうか？きっと多くの人が体験したことがあるこの問題を解決するのが、目的達成を軸に自動でテンプレートを選んでくれるこのサービス。カラーリングもターゲットユーザーに応じて自動設定します。
+        </p>
+        <%= form_for @search, url: searches_create_path, html: {method: "get"} do |f| %>
+        <div class="who">
+            <h3>目的</h3>
+            <p><%= f.select :who, [["就職活動のために", "就職活動"], ["カフェ店舗告知のために", "店舗告知"]] %></p>
+        </div>
+        <div class="what">
+            <h3>何を</h3>
+            <p><%= f.select :what, [["あああ", "rails_base"], ["Rubyの基礎", "ruby_base"]] %></p>
+        </div>
+        <div class="how">
+            <h3>どんな風に？</h3>
+            <p><%= f.select :how, [["Railsの基礎", "rails_base"], ["Rubyの基礎", "ruby_base"]] %></p>
+        </div>
+        <div class="go_contents">
+            <%= f.submit "検索する", data: { disable_with: "検索中..." } %>
+        </div>
+        <% end %>
+    </div>
+</body>

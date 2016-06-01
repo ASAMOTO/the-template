@@ -1,0 +1,58 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+.welcome_page{
+      background-image: image-url("top_bg.png");
+      background-size: cover;
+      #container{
+          display: block;
+          width: 60%;
+          margin-left: 20%;
+          overflow: inherit;
+          h1{
+              color:#fff;
+              font-size:300%;
+              letter-spacing:10px;
+              text-align:center;
+              margin-top:150px;
+              margin-bottom:80px;
+          }
+          p{
+              width:100%;
+              color:#fff;
+              font-size:150%;
+              line-height:200%;
+              letter-spacing:3px;
+              margin-bottom:100px;
+          }
+          .go_contents{
+              display:block;
+              width:100%;
+              text-align:center;
+              a{
+                  padding-top:30px;
+                  padding-bottom:30px;
+                  padding-right:100px;
+                  padding-left:100px;
+                  border-radius:5px;
+                  background-color:#41bacf;
+                  text-decoration:none;
+                  color:#fff;
+                  font-weight:bold;
+                  font-size:200%;
+                  letter-spacing:5px;
+              }
+              a:hover{
+                  box-shadow:5px 5px 0px 0px #00444f;
+                  -moz-box-shadow:5px 5px 0px 0px #00444f;
+                  -webkit-box-shadow:5px 5px 0px 0px #00444f;
+                  transition: all 1.0s;
+              }
+            }
+        }
+}

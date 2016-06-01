@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+html{
+  font-size: 62.5%; /* =10px =100% */
+}
+
+body{
+  font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* フォントの種類 */
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  color: #4c4c4c;
+  background-color:#efefef;
+}
+header{
+  width: 100%;
+  clear: both;
+  background-color: #fff;
+  border-top:5px solid #41bacf;
+  overflow: hidden;
+  img{
+      width:auto;
+      height:100px;
+      margin-left:20%;
+  }
+}

@@ -1,0 +1,15 @@
+<body class="welcome_page">
+    <header>
+        <h2><%= image_tag 'title.png' %></h2>
+    </header>
+    <div id="container">
+        <%= @test %>
+        <h1>HTMLが分かるあなたへ<br>成果を出せる自動選択！</h1>
+        <p>
+        ついつい見た目で選んでしまい、結果的に成果が出ない…ということを体験したことはないでしょうか？きっと多くの人が体験したことがあるこの問題を解決するのが、目的達成を軸に自動でテンプレートを選んでくれるこのサービス。カラーリングもターゲットユーザーに応じて自動設定します。
+        </p>
+        <div class="go_contents">
+            <%= link_to "はじめましょう", :controller => "searches" %>
+        </div>
+    </div>
+</body>
